@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <link rel="icon" href="baby-mobile.png" type="image/png">
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: Tahoma, sans-serif;
+      margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      margin-bottom: 12px;
+      padding: 6px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulário de Contato</h1>
+  <nav>
+    <a href="index.html">Página Inicial</a> |
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <form action="#" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" minlength="3" maxlength="50" required name="nome"><br>
+
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" max="120" required name="idade"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required name="email"><br>
+
+    <label for="nascimento">Data de nascimento:</label><br>
+    <input type="date" id="nascimento" name="nascimento"><br>
+
+    <label for="marca">Marca preferida:</label><br>
+    <select id="marca" name="marca">
+      <option value="rebornart">Reborn Art</option>
+      <option value="sweetreborn">Sweet Reborn</option>
+      <option value="bonecamagia">Boneca Magia</option>
+    </select><br>
+
+    <label for="cor">Cor preferida:</label><br>
+    <input type="color" id="cor" name="cor"><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
